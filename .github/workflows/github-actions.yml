@@ -1,1 +1,10 @@
-
+name: Demostración de GitHub Actions
+run-name: Explorar GitHub Actions
+on: [push]
+jobs:
+  Explorar-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "El trabajo fue activado automáticamente por un evento ${{ github.event_name }}."
+      - run: echo "Este trabajo ahora se está ejecutando en un servidor ${{ runner.os }} alojado por GitHub!"
+      - run: echo "El nombre de tu rama es ${{ github.ref }} y tu repositorio es ${{ github.repository }}."
